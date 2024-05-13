@@ -10,12 +10,11 @@ Built as part of the Launch School lesson 2 course
 
 ### Dependencies
 
-- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-- ex. Windows 10
+You will need node v21 to run this program.
 
 ### Installing
 
-You will need node v21 to run this program.
+Download or clone this repository
 
 ### Executing program
 
