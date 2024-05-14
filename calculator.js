@@ -9,6 +9,8 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
+//To do: prompt user if they want english or spanish
+
 // function chooseLanguage(language) {
 //   if (language === "s") {
 //     language = "es";
@@ -21,10 +23,6 @@ function invalidNumber(number) {
 prompt(MESSAGES["en"]["welcome"]);
 let language = readline.question();
 console.log("lang", language);
-// chooseLanguage(language);
-
-//To do: prompt user if they want english or spanish
-//create a language
 
 while (true) {
   prompt(MESSAGES["firstNumber"]);
