@@ -1,5 +1,5 @@
 const readline = require("readline-sync");
-const messages = require("./calculator_messages.json");
+const MESSAGES = require("./calculator_messages.json");
 
 function prompt(message) {
   console.log(`=> ${message}`);
@@ -9,30 +9,30 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
-prompt("Welcome to Calculator!");
+prompt(MESSAGES["welcome"]);
 
 while (true) {
-  prompt(messages.questions.firstNumber);
+  prompt(MESSAGES["firstNumber"]);
   let number1 = readline.question();
   while (invalidNumber(number1)) {
-    prompt(messages.questions.invalidNumber);
+    prompt(MESSAGES["invalidNumber"]);
     number1 = readline.question();
   }
 
-  prompt(messages.questions.secondNumber);
+  prompt(MESSAGES["secondNumber"]);
   let number2 = readline.question();
   while (invalidNumber(number2)) {
-    prompt(messages.questions.invalidNumber);
+    prompt(MESSAGES["invalidNumber"]);
     number2 = readline.question();
   }
 
-  prompt(`{messages.questions.confirmation} ${number1} and ${number2}`);
+  prompt(`{MESSAGES['confirmation']} ${number1} and ${number2}`);
 
-  prompt(messages.questions.operation);
+  prompt(MESSAGES["operation"]);
   let operation = readline.question();
 
   while (!["1", "2", "3", "4"].includes(operation)) {
-    prompt(messages.questions.choice);
+    prompt(MESSAGES["choice"]);
     operation = readline.question();
   }
 
@@ -61,7 +61,7 @@ while (true) {
     `The result of ${math} the numbers ${number1} and ${number2} is ${output} `
   );
 
-  prompt(messages.questions.anotherCalculation);
+  prompt(MESSAGES["anotherCalculation"]);
 
   let answer = readline.question();
 

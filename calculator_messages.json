@@ -1,11 +1,22 @@
 {
-  "questions": {
+  "en": {
+    "welcome": "Welcome to Calculator!",
     "firstNumber": "What's the first number? ",
     "secondNumber": "What's the second number? ",
     "invalidNumber": "Sorry you entered an invalid first number. Try again.",
     "confirmation": "You entered these numbers: ",
     "operation": "What operation would you like to perform? 1) Add 2) Subtract 3) Multiply 4) Divide",
     "choice": "You must choose 1, 2, 3 or 4",
-    "anotherCalculation": "Do you want to do another calculation? Type 'y' for yes or 'n' for no."
+    "anotherCalculation": "Do you want to do another calculation? Type 'y' for yes or any other key to end."
+  },
+  "es": {
+    "welcome": "¡Bienvenido a Calculadora!",
+    "firstNumber": "¿Cuál es el primer número? ",
+    "secondNumber": "¿Cuál es el segundo número? ",
+    "invalidNumber": "Lamentamos que hayas ingresado un primer número no válido. Intentar otra vez.",
+    "confirmation": "Ingresaste estos números: ",
+    "operation": "¿Qué operación te gustaría realizar? 1) Sumar 2) Restar 3) Multiplicar 4) Dividir ",
+    "choice": "Debes elegir 1, 2, 3 o 4",
+    "anotherCalculation": "¿Quieres hacer otro cálculo? Escriba 'y' para sí o cualquier otra tecla para finalizar."
   }
 }
