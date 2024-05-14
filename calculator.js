@@ -11,6 +11,9 @@ function invalidNumber(number) {
 
 prompt(MESSAGES["welcome"]);
 
+//To do: prompt user if they want english or spanish
+//create a language
+
 while (true) {
   prompt(MESSAGES["firstNumber"]);
   let number1 = readline.question();
