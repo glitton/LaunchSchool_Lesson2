@@ -65,12 +65,12 @@ function startCalculating() {
   );
 
   prompt(
-    `Do you want to do another calculation? Type 'Y' for yes or 'N' for no.  The program will end`
+    `Do you want to do another calculation? Type 'y' for yes or 'n' for no.  The program will end`
   );
 
   let answer = readline.question();
   let end = prompt(`Have a nice day!`);
-  answer === "Y" ? startCalculating() : end;
+  answer === "y" ? startCalculating() : end;
 }
 
 startCalculating();
@@ -96,5 +96,5 @@ startCalculating();
 //   prompt("Would you like to perform another operation? (y/n)");
 //   let answer = readline.question();
 
-//   if (answer !== "y") break;
+//   if (answer[0].toLowerCase() !== 'y') break;
 // }
