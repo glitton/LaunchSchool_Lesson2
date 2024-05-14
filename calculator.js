@@ -9,7 +9,19 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
-prompt(MESSAGES["welcome"]);
+// function chooseLanguage(language) {
+//   if (language === "s") {
+//     language = "es";
+//   } else {
+//     language = "en";
+//   }
+//   return language;
+// }
+
+prompt(MESSAGES["en"]["welcome"]);
+let language = readline.question();
+console.log("lang", language);
+// chooseLanguage(language);
 
 //To do: prompt user if they want english or spanish
 //create a language

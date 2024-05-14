@@ -1,6 +1,6 @@
 {
   "en": {
-    "welcome": "Welcome to Calculator!",
+    "welcome": "Welcome to Calculator! If you'd like to have this calculator in spanish, choose s",
     "firstNumber": "What's the first number? ",
     "secondNumber": "What's the second number? ",
     "invalidNumber": "Sorry you entered an invalid first number. Try again.",
