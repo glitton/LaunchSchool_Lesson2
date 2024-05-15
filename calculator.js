@@ -9,8 +9,7 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
-//Add function to choose language, insert into prompt
-//Need to add functionality that makes sure users doesn't input anything else
+//TODO: Add check for invalid language input
 let language = "en";
 function chooseLanguage() {
   prompt(MESSAGES[language]["chooseLanguage"]);
