@@ -19,15 +19,15 @@ function languageUsed(language) {
   } else {
     language = "en";
   }
-  console.log(language);
+
   return language;
 }
 
 prompt(MESSAGES[language]["welcome"]);
 
-languageUsed(language);
-
 while (true) {
+  languageUsed(language);
+  console.log(language);
   prompt(MESSAGES[language]["firstNumber"]);
   let number1 = readline.question();
   while (invalidNumber(number1)) {
