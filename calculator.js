@@ -10,24 +10,21 @@ function invalidNumber(number) {
 }
 
 //Add function to choose language, insert into prompt
+//Need to add functionality that makes sure users doesn't input anything else
 let language = "en";
-function languageUsed(language) {
+function chooseLanguage() {
   prompt(MESSAGES[language]["chooseLanguage"]);
-  language = readline.question();
-  if (language === "s") {
+  let languageChosen = readline.question();
+  if (languageChosen === "s") {
     language = "es";
-  } else {
-    language = "en";
   }
-
   return language;
 }
 
 prompt(MESSAGES[language]["welcome"]);
 
 while (true) {
-  languageUsed(language);
-  console.log(language);
+  chooseLanguage();
   prompt(MESSAGES[language]["firstNumber"]);
   let number1 = readline.question();
   while (invalidNumber(number1)) {
