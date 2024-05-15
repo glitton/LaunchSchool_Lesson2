@@ -2,18 +2,18 @@
   "en": {
     "welcome": "Welcome to Calculator!",
     "chooseLanguage": "To change the language to spanish type 's'.  To stay in english, press any key",
-    "firstNumber": "What's the first number? ",
-    "secondNumber": "What's the second number? ",
+    "firstNumber": "Enter the first number? ",
+    "secondNumber": "Enter the second number? ",
     "invalidNumber": "Sorry you entered an invalid number. Try again.",
     "confirmation": "You entered these numbers: ",
     "operation": "What operation would you like to perform? 1) Add 2) Subtract 3) Multiply 4) Divide",
-    "choice": "You must choose 1, 2, 3 or 4",
-    "anotherCalculation": "Do you want to do another calculation? Type 'y' for yes or any other key to end."
+    "choice": "Your input is invalid.  You must choose 1, 2, 3 or 4",
+    "anotherCalculation": "Do you want to do another calculation? Type 'y' for yes or press any other key to end."
   },
   "es": {
     "welcome": "¡Bienvenido a Calculadora!",
-    "firstNumber": "¿Cuál es el primer número? ",
-    "secondNumber": "¿Cuál es el segundo número? ",
+    "firstNumber": "¿Introduce23 es el primer número? ",
+    "secondNumber": "¿Introduce23 es el segundo número? ",
     "invalidNumber": "Lamentamos que hayas ingresado un número no válido. Intentar otra vez.",
     "confirmation": "Ingresaste estos números: ",
     "operation": "¿Qué operación te gustaría realizar? 1) Sumar 2) Restar 3) Multiplicar 4) Dividir ",

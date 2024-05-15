@@ -14,6 +14,7 @@ let language = "en";
 function chooseLanguage() {
   prompt(MESSAGES[language]["chooseLanguage"]);
   let languageChosen = readline.question();
+
   if (languageChosen === "s") {
     language = "es";
   }
@@ -21,9 +22,9 @@ function chooseLanguage() {
 }
 
 prompt(MESSAGES[language]["welcome"]);
+chooseLanguage();
 
 while (true) {
-  chooseLanguage();
   prompt(MESSAGES[language]["firstNumber"]);
   let number1 = readline.question();
   while (invalidNumber(number1)) {
@@ -76,6 +77,7 @@ while (true) {
   prompt(MESSAGES[language]["anotherCalculation"]);
 
   let answer = readline.question();
+  console.clear();
 
   if (answer !== "y") break;
 }
