@@ -15,27 +15,27 @@ function invalidNumber(number) {
 prompt(MESSAGES[LANGUAGE]["welcome"]);
 
 while (true) {
-  prompt(MESSAGES["en"]["firstNumber"]);
+  prompt(MESSAGES[LANGUAGE]["firstNumber"]);
   let number1 = readline.question();
   while (invalidNumber(number1)) {
-    prompt(MESSAGES["en"]["invalidNumber"]);
+    prompt(MESSAGES[LANGUAGE]["invalidNumber"]);
     number1 = readline.question();
   }
 
-  prompt(MESSAGES["en"]["secondNumber"]);
+  prompt(MESSAGES[LANGUAGE]["secondNumber"]);
   let number2 = readline.question();
   while (invalidNumber(number2)) {
-    prompt(MESSAGES["en"]["invalidNumber"]);
+    prompt(MESSAGES[LANGUAGE]["invalidNumber"]);
     number2 = readline.question();
   }
 
-  prompt(`${MESSAGES["en"]["confirmation"]} ${number1} and ${number2}`);
+  prompt(`${MESSAGES[LANGUAGE]["confirmation"]} ${number1} and ${number2}`);
 
-  prompt(MESSAGES["en"]["operation"]);
+  prompt(MESSAGES[LANGUAGE]["operation"]);
   let operation = readline.question();
 
   while (!["1", "2", "3", "4"].includes(operation)) {
-    prompt(MESSAGES["en"]["choice"]);
+    prompt(MESSAGES[LANGUAGE]["choice"]);
     operation = readline.question();
   }
 
@@ -64,7 +64,7 @@ while (true) {
     `The result of ${math} the numbers ${number1} and ${number2} is ${output} `
   );
 
-  prompt(MESSAGES["en"]["anotherCalculation"]);
+  prompt(MESSAGES[LANGUAGE]["anotherCalculation"]);
 
   let answer = readline.question();
 
