@@ -9,43 +9,30 @@ function invalidNumber(number) {
   return number.trimStart() === "" || Number.isNaN(Number(number));
 }
 
-//To do: prompt user if they want english or spanish
-
-// function chooseLanguage(language) {
-//   if (language === "s") {
-//     language = "es";
-//   } else {
-//     language = "en";
-//   }
-//   return language;
-// }
-
 prompt(MESSAGES["en"]["welcome"]);
-let language = readline.question();
-console.log("lang", language);
 
 while (true) {
-  prompt(MESSAGES["firstNumber"]);
+  prompt(MESSAGES["en"]["firstNumber"]);
   let number1 = readline.question();
   while (invalidNumber(number1)) {
-    prompt(MESSAGES["invalidNumber"]);
+    prompt(MESSAGES["en"]["invalidNumber"]);
     number1 = readline.question();
   }
 
-  prompt(MESSAGES["secondNumber"]);
+  prompt(MESSAGES["en"]["secondNumber"]);
   let number2 = readline.question();
   while (invalidNumber(number2)) {
-    prompt(MESSAGES["invalidNumber"]);
+    prompt(MESSAGES["en"]["invalidNumber"]);
     number2 = readline.question();
   }
 
-  prompt(`{MESSAGES['confirmation']} ${number1} and ${number2}`);
+  prompt(`${MESSAGES["en"]["confirmation"]} ${number1} and ${number2}`);
 
-  prompt(MESSAGES["operation"]);
+  prompt(MESSAGES["en"]["operation"]);
   let operation = readline.question();
 
   while (!["1", "2", "3", "4"].includes(operation)) {
-    prompt(MESSAGES["choice"]);
+    prompt(MESSAGES["en"]["choice"]);
     operation = readline.question();
   }
 
@@ -74,7 +61,7 @@ while (true) {
     `The result of ${math} the numbers ${number1} and ${number2} is ${output} `
   );
 
-  prompt(MESSAGES["anotherCalculation"]);
+  prompt(MESSAGES["en"]["anotherCalculation"]);
 
   let answer = readline.question();
 
